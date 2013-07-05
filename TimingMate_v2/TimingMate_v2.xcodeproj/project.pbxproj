@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		040385F81778C08000166686 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040385F71778C08000166686 /* UIKit.framework */; };
+		040385FA1778C08000166686 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040385F91778C08000166686 /* Foundation.framework */; };
+		040385FC1778C08000166686 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040385FB1778C08000166686 /* CoreGraphics.framework */; };
+		040385FE1778C08000166686 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040385FD1778C08000166686 /* CoreData.framework */; };
+		040386041778C08000166686 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 040386021778C08000166686 /* InfoPlist.strings */; };
+		040386061778C08000166686 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 040386051778C08000166686 /* main.m */; };
+		0403860A1778C08000166686 /* TMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 040386091778C08000166686 /* TMAppDelegate.m */; };
+		0403860C1778C08000166686 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0403860B1778C08000166686 /* Default.png */; };
+		0403860E1778C08000166686 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0403860D1778C08000166686 /* Default@2x.png */; };
+		040386101778C08000166686 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0403860F1778C08000166686 /* Default-568h@2x.png */; };
+		040386131778C08000166686 /* TimingMate_v2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 040386111778C08000166686 /* TimingMate_v2.xcdatamodeld */; };
+		0403861C1778C71900166686 /* TMTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0403861B1778C71900166686 /* TMTaskViewController.m */; };
+		040386211778D35A00166686 /* TMTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040386201778D35A00166686 /* TMTaskViewController.xib */; };
+		040386291778F30A00166686 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 040386221778F30A00166686 /* add.png */; };
+		0403862A1778F30A00166686 /* lessInfo.png in Resources */ = {isa = PBXBuildFile; fileRef = 040386231778F30A00166686 /* lessInfo.png */; };
+		0403862B1778F30A00166686 /* List-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 040386241778F30A00166686 /* List-icon.png */; };
+		0403862C1778F30A00166686 /* media-play.png in Resources */ = {isa = PBXBuildFile; fileRef = 040386251778F30A00166686 /* media-play.png */; };
+		0403862D1778F30A00166686 /* moreInfo.png in Resources */ = {isa = PBXBuildFile; fileRef = 040386261778F30A00166686 /* moreInfo.png */; };
+		0403862E1778F30A00166686 /* progressBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 040386271778F30A00166686 /* progressBar.png */; };
+		0403862F1778F30A00166686 /* Timeline-List-Grid-List-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 040386281778F30A00166686 /* Timeline-List-Grid-List-icon.png */; };
+		040386411779145B00166686 /* DDMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040386401779145B00166686 /* DDMenuController.m */; };
+		040386431779184300166686 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040386421779184300166686 /* QuartzCore.framework */; };
+		040E5C3A177FAA7900EEE7CB /* TMGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 040E5C39177FAA7900EEE7CB /* TMGlobal.m */; };
+		040E5C3D177FC61D00EEE7CB /* TMViewControllerStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 040E5C3C177FC61D00EEE7CB /* TMViewControllerStore.m */; };
+		040E5C451780B2D900EEE7CB /* TMTaskStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040E5C431780B2D900EEE7CB /* TMTaskStatusViewController.m */; };
+		040E5C461780B2D900EEE7CB /* TMTaskStatusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040E5C441780B2D900EEE7CB /* TMTaskStatusViewController.xib */; };
+		040E5C4A1780B43300EEE7CB /* engage.png in Resources */ = {isa = PBXBuildFile; fileRef = 040E5C471780B43300EEE7CB /* engage.png */; };
+		040E5C4B1780B43300EEE7CB /* finish.png in Resources */ = {isa = PBXBuildFile; fileRef = 040E5C481780B43300EEE7CB /* finish.png */; };
+		040E5C4C1780B43300EEE7CB /* trash.png in Resources */ = {isa = PBXBuildFile; fileRef = 040E5C491780B43300EEE7CB /* trash.png */; };
+		040E5C511780E09600EEE7CB /* TMTimeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040E5C4F1780E09600EEE7CB /* TMTimeDetailViewController.m */; };
+		040E5C521780E09600EEE7CB /* TMTimeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040E5C501780E09600EEE7CB /* TMTimeDetailViewController.xib */; };
+		040E5C551780EB1F00EEE7CB /* TMTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 040E5C541780EB1E00EEE7CB /* TMTimer.m */; };
+		040E5C5717810F9F00EEE7CB /* victory_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 040E5C5617810F9F00EEE7CB /* victory_small.png */; };
+		0410841D177A834100B17949 /* cellBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0410841B177A834100B17949 /* cellBg.png */; };
+		0410841E177A834100B17949 /* moreInfo_22inch.png in Resources */ = {isa = PBXBuildFile; fileRef = 0410841C177A834100B17949 /* moreInfo_22inch.png */; };
+		04108423177AC9C000B17949 /* TMListsViewEditableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04108421177AC9C000B17949 /* TMListsViewEditableCell.m */; };
+		04108424177AC9C000B17949 /* TMListsViewEditableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04108422177AC9C000B17949 /* TMListsViewEditableCell.xib */; };
+		0410842A177CBF4800B17949 /* TMEditTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04108428177CBF4800B17949 /* TMEditTaskViewController.m */; };
+		0410842B177CBF4800B17949 /* TMEditTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04108429177CBF4800B17949 /* TMEditTaskViewController.xib */; };
+		041ED334177A4C7F00C9AE69 /* TMListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041ED332177A4C7F00C9AE69 /* TMListViewController.m */; };
+		041ED335177A4C7F00C9AE69 /* TMListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041ED333177A4C7F00C9AE69 /* TMListViewController.xib */; };
+		04E8EF68177CF7B90005D4EA /* TMListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8EF67177CF7B90005D4EA /* TMListItem.m */; };
+		04E8EF6C177D23F60005D4EA /* TMListStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8EF6B177D23F60005D4EA /* TMListStore.m */; };
+		04FEB6BA177E586B00F25BD7 /* TMTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FEB6B9177E586B00F25BD7 /* TMTask.m */; };
+		04FEB6BD177E5C2200F25BD7 /* TMTaskStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FEB6BC177E5C2200F25BD7 /* TMTaskStore.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		040385F41778C08000166686 /* TimingMate_v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimingMate_v2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		040385F71778C08000166686 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		040385F91778C08000166686 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		040385FB1778C08000166686 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		040385FD1778C08000166686 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		040386011778C08000166686 /* TimingMate_v2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TimingMate_v2-Info.plist"; sourceTree = "<group>"; };
+		040386031778C08000166686 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		040386051778C08000166686 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		040386071778C08000166686 /* TimingMate_v2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TimingMate_v2-Prefix.pch"; sourceTree = "<group>"; };
+		040386081778C08000166686 /* TMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMAppDelegate.h; sourceTree = "<group>"; };
+		040386091778C08000166686 /* TMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMAppDelegate.m; sourceTree = "<group>"; };
+		0403860B1778C08000166686 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0403860D1778C08000166686 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		0403860F1778C08000166686 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		040386121778C08000166686 /* TimingMate_v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TimingMate_v2.xcdatamodel; sourceTree = "<group>"; };
+		040386191778C0C700166686 /* TimingMate_v2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TimingMate_v2.entitlements; sourceTree = "<group>"; };
+		0403861A1778C71900166686 /* TMTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMTaskViewController.h; sourceTree = "<group>"; };
+		0403861B1778C71900166686 /* TMTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMTaskViewController.m; sourceTree = "<group>"; };
+		040386201778D35A00166686 /* TMTaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TMTaskViewController.xib; path = ../TMTaskViewController.xib; sourceTree = "<group>"; };
+		040386221778F30A00166686 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = add.png; path = ../add.png; sourceTree = "<group>"; };
+		040386231778F30A00166686 /* lessInfo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lessInfo.png; path = ../lessInfo.png; sourceTree = "<group>"; };
+		040386241778F30A00166686 /* List-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "List-icon.png"; path = "../List-icon.png"; sourceTree = "<group>"; };
+		040386251778F30A00166686 /* media-play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "media-play.png"; path = "../media-play.png"; sourceTree = "<group>"; };
+		040386261778F30A00166686 /* moreInfo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = moreInfo.png; path = ../moreInfo.png; sourceTree = "<group>"; };
+		040386271778F30A00166686 /* progressBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = progressBar.png; path = ../progressBar.png; sourceTree = "<group>"; };
+		040386281778F30A00166686 /* Timeline-List-Grid-List-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Timeline-List-Grid-List-icon.png"; path = "../Timeline-List-Grid-List-icon.png"; sourceTree = "<group>"; };
+		0403863F1779145B00166686 /* DDMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMenuController.h; sourceTree = "<group>"; };
+		040386401779145B00166686 /* DDMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMenuController.m; sourceTree = "<group>"; };
+		040386421779184300166686 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		040E5C38177FAA7900EEE7CB /* TMGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMGlobal.h; sourceTree = "<group>"; };
+		040E5C39177FAA7900EEE7CB /* TMGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMGlobal.m; sourceTree = "<group>"; };
+		040E5C3B177FC61D00EEE7CB /* TMViewControllerStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMViewControllerStore.h; sourceTree = "<group>"; };
+		040E5C3C177FC61D00EEE7CB /* TMViewControllerStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMViewControllerStore.m; sourceTree = "<group>"; };
+		040E5C421780B2D900EEE7CB /* TMTaskStatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMTaskStatusViewController.h; sourceTree = "<group>"; };
+		040E5C431780B2D900EEE7CB /* TMTaskStatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMTaskStatusViewController.m; sourceTree = "<group>"; };
+		040E5C441780B2D900EEE7CB /* TMTaskStatusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TMTaskStatusViewController.xib; sourceTree = "<group>"; };
+		040E5C471780B43300EEE7CB /* engage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = engage.png; sourceTree = "<group>"; };
+		040E5C481780B43300EEE7CB /* finish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = finish.png; sourceTree = "<group>"; };
+		040E5C491780B43300EEE7CB /* trash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trash.png; sourceTree = "<group>"; };
+		040E5C4E1780E09600EEE7CB /* TMTimeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMTimeDetailViewController.h; sourceTree = "<group>"; };
+		040E5C4F1780E09600EEE7CB /* TMTimeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMTimeDetailViewController.m; sourceTree = "<group>"; };
+		040E5C501780E09600EEE7CB /* TMTimeDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TMTimeDetailViewController.xib; sourceTree = "<group>"; };
+		040E5C531780EB1D00EEE7CB /* TMTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMTimer.h; sourceTree = "<group>"; };
+		040E5C541780EB1E00EEE7CB /* TMTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMTimer.m; sourceTree = "<group>"; };
+		040E5C5617810F9F00EEE7CB /* victory_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = victory_small.png; sourceTree = "<group>"; };
+		0410841B177A834100B17949 /* cellBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cellBg.png; path = ../cellBg.png; sourceTree = "<group>"; };
+		0410841C177A834100B17949 /* moreInfo_22inch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = moreInfo_22inch.png; path = ../moreInfo_22inch.png; sourceTree = "<group>"; };
+		04108420177AC9C000B17949 /* TMListsViewEditableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMListsViewEditableCell.h; sourceTree = "<group>"; };
+		04108421177AC9C000B17949 /* TMListsViewEditableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMListsViewEditableCell.m; sourceTree = "<group>"; };
+		04108422177AC9C000B17949 /* TMListsViewEditableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TMListsViewEditableCell.xib; sourceTree = "<group>"; };
+		04108427177CBF4800B17949 /* TMEditTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMEditTaskViewController.h; sourceTree = "<group>"; };
+		04108428177CBF4800B17949 /* TMEditTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMEditTaskViewController.m; sourceTree = "<group>"; };
+		04108429177CBF4800B17949 /* TMEditTaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TMEditTaskViewController.xib; sourceTree = "<group>"; };
+		041ED331177A4C7F00C9AE69 /* TMListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMListViewController.h; sourceTree = "<group>"; };
+		041ED332177A4C7F00C9AE69 /* TMListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMListViewController.m; sourceTree = "<group>"; };
+		041ED333177A4C7F00C9AE69 /* TMListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TMListViewController.xib; sourceTree = "<group>"; };
+		04E8EF66177CF7B90005D4EA /* TMListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMListItem.h; sourceTree = "<group>"; };
+		04E8EF67177CF7B90005D4EA /* TMListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMListItem.m; sourceTree = "<group>"; };
+		04E8EF6A177D23F60005D4EA /* TMListStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMListStore.h; sourceTree = "<group>"; };
+		04E8EF6B177D23F60005D4EA /* TMListStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMListStore.m; sourceTree = "<group>"; };
+		04FEB6B8177E586B00F25BD7 /* TMTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMTask.h; sourceTree = "<group>"; };
+		04FEB6B9177E586B00F25BD7 /* TMTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMTask.m; sourceTree = "<group>"; };
+		04FEB6BB177E5C2200F25BD7 /* TMTaskStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMTaskStore.h; sourceTree = "<group>"; };
+		04FEB6BC177E5C2200F25BD7 /* TMTaskStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMTaskStore.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		040385F11778C08000166686 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040386431779184300166686 /* QuartzCore.framework in Frameworks */,
+				040385F81778C08000166686 /* UIKit.framework in Frameworks */,
+				040385FA1778C08000166686 /* Foundation.framework in Frameworks */,
+				040385FC1778C08000166686 /* CoreGraphics.framework in Frameworks */,
+				040385FE1778C08000166686 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		040385EB1778C08000166686 = {
+			isa = PBXGroup;
+			children = (
+				040385FF1778C08000166686 /* TimingMate_v2 */,
+				040385F61778C08000166686 /* Frameworks */,
+				040385F51778C08000166686 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		040385F51778C08000166686 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				040385F41778C08000166686 /* TimingMate_v2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		040385F61778C08000166686 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				040386421779184300166686 /* QuartzCore.framework */,
+				040385F71778C08000166686 /* UIKit.framework */,
+				040385F91778C08000166686 /* Foundation.framework */,
+				040385FB1778C08000166686 /* CoreGraphics.framework */,
+				040385FD1778C08000166686 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		040385FF1778C08000166686 /* TimingMate_v2 */ = {
+			isa = PBXGroup;
+			children = (
+				040386191778C0C700166686 /* TimingMate_v2.entitlements */,
+				040E5C38177FAA7900EEE7CB /* TMGlobal.h */,
+				040E5C39177FAA7900EEE7CB /* TMGlobal.m */,
+				040E5C531780EB1D00EEE7CB /* TMTimer.h */,
+				040E5C541780EB1E00EEE7CB /* TMTimer.m */,
+				040386081778C08000166686 /* TMAppDelegate.h */,
+				040386091778C08000166686 /* TMAppDelegate.m */,
+				0410841F177AC3A400B17949 /* TableViewCell */,
+				0403863417790AC200166686 /* Controllers */,
+				04E8EF65177CF7750005D4EA /* Models */,
+				04E8EF69177D23C10005D4EA /* Stores */,
+				040386311779096100166686 /* ThirdParty */,
+				040386001778C08000166686 /* Supporting Files */,
+			);
+			path = TimingMate_v2;
+			sourceTree = "<group>";
+		};
+		040386001778C08000166686 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				040386111778C08000166686 /* TimingMate_v2.xcdatamodeld */,
+				040386301778F31C00166686 /* Resources */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		040386301778F31C00166686 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				040E5C5617810F9F00EEE7CB /* victory_small.png */,
+				040E5C471780B43300EEE7CB /* engage.png */,
+				040E5C481780B43300EEE7CB /* finish.png */,
+				040E5C491780B43300EEE7CB /* trash.png */,
+				040386011778C08000166686 /* TimingMate_v2-Info.plist */,
+				040386021778C08000166686 /* InfoPlist.strings */,
+				040386221778F30A00166686 /* add.png */,
+				040386231778F30A00166686 /* lessInfo.png */,
+				040386241778F30A00166686 /* List-icon.png */,
+				0410841B177A834100B17949 /* cellBg.png */,
+				0410841C177A834100B17949 /* moreInfo_22inch.png */,
+				040386251778F30A00166686 /* media-play.png */,
+				040386261778F30A00166686 /* moreInfo.png */,
+				040386271778F30A00166686 /* progressBar.png */,
+				040386281778F30A00166686 /* Timeline-List-Grid-List-icon.png */,
+				040386051778C08000166686 /* main.m */,
+				040386071778C08000166686 /* TimingMate_v2-Prefix.pch */,
+				0403860B1778C08000166686 /* Default.png */,
+				0403860D1778C08000166686 /* Default@2x.png */,
+				0403860F1778C08000166686 /* Default-568h@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		040386311779096100166686 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				0403863F1779145B00166686 /* DDMenuController.h */,
+				040386401779145B00166686 /* DDMenuController.m */,
+			);
+			name = ThirdParty;
+			sourceTree = "<group>";
+		};
+		0403863417790AC200166686 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0403863617790B2300166686 /* ListController */,
+				0403863517790B0F00166686 /* TaskController */,
+				04108426177CBF2300B17949 /* EditTaskController */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		0403863517790B0F00166686 /* TaskController */ = {
+			isa = PBXGroup;
+			children = (
+				0403861A1778C71900166686 /* TMTaskViewController.h */,
+				0403861B1778C71900166686 /* TMTaskViewController.m */,
+				040386201778D35A00166686 /* TMTaskViewController.xib */,
+				040E5C411780B2AF00EEE7CB /* TaskStatusController */,
+				040E5C4D1780E05700EEE7CB /* TimeDetailController */,
+			);
+			name = TaskController;
+			sourceTree = "<group>";
+		};
+		0403863617790B2300166686 /* ListController */ = {
+			isa = PBXGroup;
+			children = (
+				041ED331177A4C7F00C9AE69 /* TMListViewController.h */,
+				041ED332177A4C7F00C9AE69 /* TMListViewController.m */,
+				041ED333177A4C7F00C9AE69 /* TMListViewController.xib */,
+			);
+			name = ListController;
+			sourceTree = "<group>";
+		};
+		040E5C411780B2AF00EEE7CB /* TaskStatusController */ = {
+			isa = PBXGroup;
+			children = (
+				040E5C421780B2D900EEE7CB /* TMTaskStatusViewController.h */,
+				040E5C431780B2D900EEE7CB /* TMTaskStatusViewController.m */,
+				040E5C441780B2D900EEE7CB /* TMTaskStatusViewController.xib */,
+			);
+			name = TaskStatusController;
+			sourceTree = "<group>";
+		};
+		040E5C4D1780E05700EEE7CB /* TimeDetailController */ = {
+			isa = PBXGroup;
+			children = (
+				040E5C4E1780E09600EEE7CB /* TMTimeDetailViewController.h */,
+				040E5C4F1780E09600EEE7CB /* TMTimeDetailViewController.m */,
+				040E5C501780E09600EEE7CB /* TMTimeDetailViewController.xib */,
+			);
+			name = TimeDetailController;
+			sourceTree = "<group>";
+		};
+		0410841F177AC3A400B17949 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				04108420177AC9C000B17949 /* TMListsViewEditableCell.h */,
+				04108421177AC9C000B17949 /* TMListsViewEditableCell.m */,
+				04108422177AC9C000B17949 /* TMListsViewEditableCell.xib */,
+			);
+			name = TableViewCell;
+			sourceTree = "<group>";
+		};
+		04108426177CBF2300B17949 /* EditTaskController */ = {
+			isa = PBXGroup;
+			children = (
+				04108427177CBF4800B17949 /* TMEditTaskViewController.h */,
+				04108428177CBF4800B17949 /* TMEditTaskViewController.m */,
+				04108429177CBF4800B17949 /* TMEditTaskViewController.xib */,
+			);
+			name = EditTaskController;
+			sourceTree = "<group>";
+		};
+		04E8EF65177CF7750005D4EA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04E8EF66177CF7B90005D4EA /* TMListItem.h */,
+				04E8EF67177CF7B90005D4EA /* TMListItem.m */,
+				04FEB6B8177E586B00F25BD7 /* TMTask.h */,
+				04FEB6B9177E586B00F25BD7 /* TMTask.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		04E8EF69177D23C10005D4EA /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				04E8EF6A177D23F60005D4EA /* TMListStore.h */,
+				04E8EF6B177D23F60005D4EA /* TMListStore.m */,
+				04FEB6BB177E5C2200F25BD7 /* TMTaskStore.h */,
+				04FEB6BC177E5C2200F25BD7 /* TMTaskStore.m */,
+				040E5C3B177FC61D00EEE7CB /* TMViewControllerStore.h */,
+				040E5C3C177FC61D00EEE7CB /* TMViewControllerStore.m */,
+			);
+			name = Stores;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		040385F31778C08000166686 /* TimingMate_v2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 040386161778C08000166686 /* Build configuration list for PBXNativeTarget "TimingMate_v2" */;
+			buildPhases = (
+				040385F01778C08000166686 /* Sources */,
+				040385F11778C08000166686 /* Frameworks */,
+				040385F21778C08000166686 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimingMate_v2;
+			productName = TimingMate_v2;
+			productReference = 040385F41778C08000166686 /* TimingMate_v2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		040385EC1778C08000166686 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TM;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = fafa;
+			};
+			buildConfigurationList = 040385EF1778C08000166686 /* Build configuration list for PBXProject "TimingMate_v2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 040385EB1778C08000166686;
+			productRefGroup = 040385F51778C08000166686 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				040385F31778C08000166686 /* TimingMate_v2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		040385F21778C08000166686 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040386041778C08000166686 /* InfoPlist.strings in Resources */,
+				0403860C1778C08000166686 /* Default.png in Resources */,
+				0403860E1778C08000166686 /* Default@2x.png in Resources */,
+				040386101778C08000166686 /* Default-568h@2x.png in Resources */,
+				040386211778D35A00166686 /* TMTaskViewController.xib in Resources */,
+				040386291778F30A00166686 /* add.png in Resources */,
+				0403862A1778F30A00166686 /* lessInfo.png in Resources */,
+				0403862B1778F30A00166686 /* List-icon.png in Resources */,
+				0403862C1778F30A00166686 /* media-play.png in Resources */,
+				0403862D1778F30A00166686 /* moreInfo.png in Resources */,
+				0403862E1778F30A00166686 /* progressBar.png in Resources */,
+				0403862F1778F30A00166686 /* Timeline-List-Grid-List-icon.png in Resources */,
+				041ED335177A4C7F00C9AE69 /* TMListViewController.xib in Resources */,
+				0410841D177A834100B17949 /* cellBg.png in Resources */,
+				0410841E177A834100B17949 /* moreInfo_22inch.png in Resources */,
+				04108424177AC9C000B17949 /* TMListsViewEditableCell.xib in Resources */,
+				0410842B177CBF4800B17949 /* TMEditTaskViewController.xib in Resources */,
+				040E5C461780B2D900EEE7CB /* TMTaskStatusViewController.xib in Resources */,
+				040E5C4A1780B43300EEE7CB /* engage.png in Resources */,
+				040E5C4B1780B43300EEE7CB /* finish.png in Resources */,
+				040E5C4C1780B43300EEE7CB /* trash.png in Resources */,
+				040E5C521780E09600EEE7CB /* TMTimeDetailViewController.xib in Resources */,
+				040E5C5717810F9F00EEE7CB /* victory_small.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		040385F01778C08000166686 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040386061778C08000166686 /* main.m in Sources */,
+				0403860A1778C08000166686 /* TMAppDelegate.m in Sources */,
+				040386131778C08000166686 /* TimingMate_v2.xcdatamodeld in Sources */,
+				0403861C1778C71900166686 /* TMTaskViewController.m in Sources */,
+				040386411779145B00166686 /* DDMenuController.m in Sources */,
+				041ED334177A4C7F00C9AE69 /* TMListViewController.m in Sources */,
+				04108423177AC9C000B17949 /* TMListsViewEditableCell.m in Sources */,
+				0410842A177CBF4800B17949 /* TMEditTaskViewController.m in Sources */,
+				04E8EF68177CF7B90005D4EA /* TMListItem.m in Sources */,
+				04E8EF6C177D23F60005D4EA /* TMListStore.m in Sources */,
+				04FEB6BA177E586B00F25BD7 /* TMTask.m in Sources */,
+				04FEB6BD177E5C2200F25BD7 /* TMTaskStore.m in Sources */,
+				040E5C3A177FAA7900EEE7CB /* TMGlobal.m in Sources */,
+				040E5C3D177FC61D00EEE7CB /* TMViewControllerStore.m in Sources */,
+				040E5C451780B2D900EEE7CB /* TMTaskStatusViewController.m in Sources */,
+				040E5C511780E09600EEE7CB /* TMTimeDetailViewController.m in Sources */,
+				040E5C551780EB1F00EEE7CB /* TMTimer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		040386021778C08000166686 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				040386031778C08000166686 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		040386141778C08000166686 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		040386151778C08000166686 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		040386171778C08000166686 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TimingMate_v2/TimingMate_v2-Prefix.pch";
+				INFOPLIST_FILE = "TimingMate_v2/TimingMate_v2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		040386181778C08000166686 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TimingMate_v2/TimingMate_v2-Prefix.pch";
+				INFOPLIST_FILE = "TimingMate_v2/TimingMate_v2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		040385EF1778C08000166686 /* Build configuration list for PBXProject "TimingMate_v2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				040386141778C08000166686 /* Debug */,
+				040386151778C08000166686 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		040386161778C08000166686 /* Build configuration list for PBXNativeTarget "TimingMate_v2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				040386171778C08000166686 /* Debug */,
+				040386181778C08000166686 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		040386111778C08000166686 /* TimingMate_v2.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				040386121778C08000166686 /* TimingMate_v2.xcdatamodel */,
+			);
+			currentVersion = 040386121778C08000166686 /* TimingMate_v2.xcdatamodel */;
+			path = TimingMate_v2.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 040385EC1778C08000166686 /* Project object */;
+}
